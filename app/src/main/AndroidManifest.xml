@@ -13,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GameOfThronesHouses">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.DetailsActivity"
+            android:parentActivityName=".ui.HousesListActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".ui.HousesListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

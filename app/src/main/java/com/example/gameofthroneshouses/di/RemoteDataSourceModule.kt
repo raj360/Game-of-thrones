@@ -1,7 +1,7 @@
 package com.example.gameofthroneshouses.di
 
 
-import com.example.gameofthroneshouses.source.remote.RemoteDataSource
+import com.example.gameofthroneshouses.datasources.remote.RemoteDataSource
 import org.kodein.di.DI
 import org.kodein.di.bind
 import org.kodein.di.instance

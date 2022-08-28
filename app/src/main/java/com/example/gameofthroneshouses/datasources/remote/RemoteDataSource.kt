@@ -1,10 +1,10 @@
-package com.example.gameofthroneshouses.source.remote
+package com.example.gameofthroneshouses.datasources.remote
 
-import com.example.gameofthroneshouses.network.api.IHouseApi
-import com.example.gameofthroneshouses.network.result.emptyResult
-import com.example.gameofthroneshouses.network.result.errorResult
-import com.example.gameofthroneshouses.network.result.successResult
+import com.example.gameofthroneshouses.providers.network.api.IHouseApi
+import com.example.gameofthroneshouses.utils.emptyResult
+import com.example.gameofthroneshouses.utils.errorResult
 import com.example.gameofthroneshouses.utils.log
+import com.example.gameofthroneshouses.utils.successResult
 import ru.gildor.coroutines.retrofit.Result
 import ru.gildor.coroutines.retrofit.awaitResult
 

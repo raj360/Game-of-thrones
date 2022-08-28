@@ -1,8 +1,8 @@
 package com.example.gameofthroneshouses.di
 
-import com.example.gameofthroneshouses.network.api.IHouseApi
-import com.example.gameofthroneshouses.network.createOkHttpClient
-import com.example.gameofthroneshouses.network.createWebServiceApi
+import com.example.gameofthroneshouses.providers.network.api.IHouseApi
+import com.example.gameofthroneshouses.providers.network.createOkHttpClient
+import com.example.gameofthroneshouses.providers.network.createWebServiceApi
 import com.example.gameofthroneshouses.utils.SERVER_URL
 import okhttp3.OkHttpClient
 import org.kodein.di.*

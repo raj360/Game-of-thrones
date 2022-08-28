@@ -1,4 +1,4 @@
-package com.example.gameofthroneshouses.network
+package com.example.gameofthroneshouses.providers.network
 
 import android.annotation.SuppressLint
 import com.squareup.moshi.Moshi

@@ -1,7 +1,10 @@
 package com.example.gameofthroneshouses.models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.example.gameofthroneshouses.models.base.IConvertibleTo
 
+@Entity
 data class House(
     val ancestralWeapons: List<String>,
     val cadetBranches: List<Any>,
@@ -11,6 +14,7 @@ data class House(
     val founded: String,
     val founder: String,
     val heir: String,
+    @PrimaryKey
     val name: String,
     val overlord: String,
     val region: String,

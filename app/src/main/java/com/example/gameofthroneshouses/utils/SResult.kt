@@ -1,4 +1,4 @@
-package com.example.gameofthroneshouses.network.result
+package com.example.gameofthroneshouses.utils
 
 import com.example.gameofthroneshouses.models.base.IConvertibleTo
 
