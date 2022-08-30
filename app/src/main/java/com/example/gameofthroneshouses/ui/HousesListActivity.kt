@@ -41,7 +41,6 @@ class HousesListActivity : AppCompatActivity(), DIAware {
         when(result){
             is SResult.Loading -> {
                 binding.progressBar.visibility = View.VISIBLE
-                log { "Loading..." }
             }
 
             is SResult.Success -> {
@@ -53,13 +52,11 @@ class HousesListActivity : AppCompatActivity(), DIAware {
             is SResult.Error -> {
                 binding.progressBar.visibility = View.INVISIBLE
                 Toast.makeText(this,"Error : ${result.message}", Toast.LENGTH_SHORT).show()
-                log {"Error occurred ${result.message}"}
             }
 
             is SResult.Empty -> {
                 binding.progressBar.visibility = View.INVISIBLE
                 Toast.makeText(this,"Server not reachable", Toast.LENGTH_SHORT).show()
-                log {"An Exception occurred"}
             }
         }
     }

@@ -2,22 +2,38 @@ package com.example.gameofthroneshouses.viewmodels
 
 import androidx.lifecycle.*
 import com.example.gameofthroneshouses.models.House
-import com.example.gameofthroneshouses.datasources.HouseRepository
+import com.example.gameofthroneshouses.usecases.HouseUseCase
 import com.example.gameofthroneshouses.utils.SResult
 import com.example.gameofthroneshouses.utils.loading
 import kotlinx.coroutines.Dispatchers
 
 class HouseViewModel(
-    private val repository: HouseRepository
+    private val houseUseCase: HouseUseCase
 ) : ViewModel() {
 
-    private val remoteHousesLiveData: LiveData<SResult<List<House>>> by lazy {
+    private var name: MutableLiveData<String> = MutableLiveData()
+
+    private val housesLiveData: LiveData<SResult<List<House>>> by lazy {
         liveData(viewModelScope.coroutineContext + Dispatchers.IO) {
             emit(loading())
-            emit(repository.getRemoteHouses())
+            emit(houseUseCase.localHousesData())
+            emitSource(houseUseCase.remoteHousesLiveData())
         }
     }
 
-    fun getHousesList() =  remoteHousesLiveData
+    private val houseLiveData: LiveData<SResult<House>> by lazy {
+        liveData(viewModelScope.coroutineContext + Dispatchers.IO) {
+            emit(loading())
+            emitSource(houseUseCase.getHouseByName(name.value!!))
+        }
+    }
+
+    fun getHousesList() =  housesLiveData
+
+    fun getHouseDetails() = houseLiveData
+
+    fun setHouseName(houseName: String) {
+        name.value = houseName
+    }
 
 }

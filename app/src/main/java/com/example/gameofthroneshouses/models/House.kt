@@ -7,7 +7,7 @@ import com.example.gameofthroneshouses.models.base.IConvertibleTo
 @Entity
 data class House(
     val ancestralWeapons: List<String>,
-    val cadetBranches: List<Any>,
+    val cadetBranches: List<String>,
     val coatOfArms: String,
     val currentLord: String,
     val diedOut: String,
@@ -19,7 +19,7 @@ data class House(
     val overlord: String,
     val region: String,
     val seats: List<String>,
-    val swornMembers: List<Any>,
+    val swornMembers: List<String>,
     val titles: List<String>,
     val url: String,
     val words: String

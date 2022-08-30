@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Game of Thrones houses</string>
+    <string name="house_details">House details</string>
+    <string name="house_name">house name</string>
 </resources>

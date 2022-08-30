@@ -8,6 +8,7 @@ import com.example.gameofthroneshouses.providers.database.dao.base.IBaseDao
 
 @Dao
 interface IHouseDao : IBaseDao<House> {
+
     @Query("SELECT * FROM House WHERE name=:name LIMIT 1")
     fun getByName(name: String): LiveData<House>
 
