@@ -1,8 +1,7 @@
 package com.example.gameofthroneshouses.viewmodels
 
-import com.example.gameofthroneshouses.models.House
 import com.example.gameofthroneshouses.usecases.HouseUseCase
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
