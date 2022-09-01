@@ -36,4 +36,10 @@ class HouseViewModel(
         name.value = houseName
     }
 
+    /**
+     * We do no have business logic to test
+     * created a test scenario
+     */
+    fun isNameParamEmpty() = name.value.isNullOrBlank()
+
 }
