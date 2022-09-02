@@ -1,25 +1,25 @@
 ## Mobile-App Coding Challenge 👨🏼‍💻
 
 ## Table of contents
-- [Zatec Codding Challenge](#zatec-codding-challenge)
+- [Challenge](#challenge)
 - [Table of contents](#table-of-contents)
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Architecture](#achitecture)
+- [Architecture](#architecture)
   - [MVVM](#mvvm)
   - [Domain](#domain)
   - [Data](#data)
   - [Presentation](#presentation)
-  - [Model](#modal)
+  - [Model](#model)
   - [View Model](#view-model)
   - [View](#view)
-  - [LiveData](#liveData)
+  - [LiveData](#livedata)
 - [Dependency Injection with Kodein](#dependency-injection-with-kodein)
 - [Coroutines](#coroutines)
 - [Other concepts](#other-concepts)
 - [AandroidX](#androidx)
 
-## Zatec Codding Challenge
+## Challenge
 Create a mobile application. The app should show the user all Game of Thrones houses in a list.
 
 It should be possible to select a house from the list. By tapping on a entry the house should appear in a detail view were you should display more information to the selected house.
