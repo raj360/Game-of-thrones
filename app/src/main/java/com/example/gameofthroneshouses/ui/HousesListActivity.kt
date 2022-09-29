@@ -9,9 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gameofthroneshouses.databinding.ActivityHousesListBinding
 import com.example.gameofthroneshouses.models.House
-import com.example.gameofthroneshouses.ui.adapters.CustomAdapter
 import com.example.gameofthroneshouses.utils.SResult
-import com.example.gameofthroneshouses.utils.log
 import com.example.gameofthroneshouses.viewmodels.HouseViewModel
 import com.pharmacure.online_pharmacy_app.viewmodels.factory.ViewModelFactory
 import org.kodein.di.DI

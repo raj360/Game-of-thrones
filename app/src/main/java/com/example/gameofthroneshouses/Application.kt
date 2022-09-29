@@ -19,7 +19,7 @@ class Application : Application(), DIAware {
         bind() from singleton { ViewModelFactory(applicationContext) }
         bind() from singleton {
             Room.databaseBuilder(applicationContext, Database::class.java, DB_NAME)
-                .allowMainThreadQueries()
+                // .allowMainThreadQueries() // not good in productions instances
                 .build()
         }
         import(networkModule, allowOverride = true)
