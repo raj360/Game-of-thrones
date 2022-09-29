@@ -1,13 +1,10 @@
-package com.example.gameofthroneshouses.ui.adapters
+package com.example.gameofthroneshouses.ui
 
 import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gameofthroneshouses.R
 import com.example.gameofthroneshouses.databinding.ItemViewHouseBinding
 import com.example.gameofthroneshouses.models.House
 import com.example.gameofthroneshouses.utils.startDetailsActivity

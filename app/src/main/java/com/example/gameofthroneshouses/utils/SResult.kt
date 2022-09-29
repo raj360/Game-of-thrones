@@ -27,8 +27,7 @@ fun errorResult(code: Int, message: String) = SResult.Error(code, message)
  */
 inline fun <reified O : Any, reified I : IConvertibleTo<O>> SResult<List<I>>.mapListTo(): SResult<List<O>> {
     return when (this) {
-        is SResult.Success -> successResult(
-            this.data.mapNotNull { it.convertTo() })
+        is SResult.Success -> successResult(this.data.mapNotNull { it.convertTo() })
         is SResult.Empty -> this
         is SResult.Loading -> this
         is SResult.Error -> this
